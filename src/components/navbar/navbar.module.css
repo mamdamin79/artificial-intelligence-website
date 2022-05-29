@@ -1,0 +1,122 @@
+.navbarContainer{
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarContainer a{
+    margin: 0 1rem;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.navbarContainer a:hover{
+    color: #d6d4d4;
+}
+.logoContainer{
+    width: 62.56px;
+    height: 16.02px;
+}
+.logoContainer img{
+    width: 100%;
+    height: 100%;
+}
+.buttonContainer{
+    display: flex;
+    align-items: center;
+}
+.signin{
+    background: #FF4820;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 0.5rem 1rem ;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor:pointer;
+    outline: none;
+}
+.signin:hover{
+    background: #ff3002;
+}
+.buttonContainer .menuButton{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5px;
+    width: 40px;
+    background-color: transparent;
+    height: 40px;
+    display: none;
+    border: none;
+    cursor:pointer;
+    outline: none;
+
+}
+.mobileMenuContainer{
+    position: absolute;
+    background-color:var(--color-footer);
+    right: 10%;
+    top: 100px;
+    display: none;
+    min-width: 210px;
+    padding:1rem;
+    width:35%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.mobileMenuContainer a{
+    display: block;
+    text-align: right;
+    padding: 0.5rem 0;
+}
+.mobileMenuContainer .signin{
+    display: none;
+}
+/* media queries */
+@media (max-width: 576px) {
+    .navbarContainer{
+        padding: 2rem;
+    }
+    .buttonContainer .signin,.signup{
+        display: none;
+    }
+    .mobileMenuContainer .signin{
+        display: block;
+        
+    }
+
+}
+
+@media (max-width: 768px) { 
+    .navbarContainer{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 1030px) {
+    .navbarContainer .nav{
+        display: none;
+    }
+    .buttonContainer .menuButton{
+        display: block;
+    }
+    .mobileMenuContainer{
+        display: block;
+    }
+
+}
+

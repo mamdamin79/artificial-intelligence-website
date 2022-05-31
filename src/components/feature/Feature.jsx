@@ -1,10 +1,11 @@
 import React from 'react';
 // styles
 import styles from './feature.module.css';
-const Feature = () => {
+const Feature = ({title,paragraph}) => {
     return (
-        <div>
-            Feature
+        <div className={styles.feature}>
+            <h2>{title}</h2>
+            <p>{paragraph}</p>
         </div>
     );
 }

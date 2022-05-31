@@ -1,0 +1,25 @@
+.feature h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    position: relative;
+}
+.feature h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;    width:50px; 
+    height: 4px;
+}
+.feature p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #81AFDD;
+}

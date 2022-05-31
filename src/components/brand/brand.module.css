@@ -1,0 +1,19 @@
+.brandContainer{
+    display: flex;
+    padding:2rem 6rem;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.brandContainer div{
+    flex: 1;
+    display: flex;
+    max-width: 150px; 
+    min-width:120px;
+    align-items: center;
+    justify-content: center;
+    margin:1.5rem;
+}
+.brandContainer div img{
+    width: 100%;
+}
